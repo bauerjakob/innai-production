@@ -24,9 +24,6 @@ services:
         image: ghcr.io/bauerjakob/innai:server-${INNAI_VERSION}
         ports:
             - 8080:80
-        depends_on:
-            mongo:
-                condition: service_healthy
         links:
             - mongo
         environment:
