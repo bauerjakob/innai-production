@@ -19,6 +19,8 @@ services:
             ME_CONFIG_MONGODB_ADMINUSERNAME: ${ROOT_USER}
             ME_CONFIG_MONGODB_ADMINPASSWORD: ${ROOT_PASSWORD}
             ME_CONFIG_MONGODB_URL: ${MONGO_EXPRESS_SERVER_CONNECTION_STRING}
+        volumes:
+            - ./mount/:/data/db
 
     innai-server:
         image: ghcr.io/bauerjakob/innai:server-${INNAI_VERSION}
