@@ -19,6 +19,7 @@ services:
         environment:
             ConnectionStrings__DefaultConnection: ${INNAI_SERVER_CONNECTION_STRING}
             ApiClients__InnAiPredictionClient__BaseUrl: http://innai-predict:8000
+            ApiClients__PrecipitationMapClient__ApiKey: ${OPEN_WEATHER_API_KEY}
         depends_on:
             innai-db:
                 condition: service_healthy
