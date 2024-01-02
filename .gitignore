@@ -1,1 +1,4 @@
 mount
+data/certbot
+logs
+.env
