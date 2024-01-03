@@ -58,4 +58,5 @@ networks:
     frontend:
     backend:
     proxynet:
-        external: true
+        # external: true
+        name: proxynet
