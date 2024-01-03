@@ -50,7 +50,7 @@ services:
         image: ghcr.io/bauerjakob/innai-predict:predict-${INNAI_VERSION}
         restart: always
         ports:
-            - 3000:8000
+            - 8000:8000
         networks:
             - backend
 
